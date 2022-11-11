@@ -124,8 +124,20 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
-
+.box { 
+  flex-basis: 20%;
+  text-align: center;
+  min-width: 20%;
+  min-height: 40px;
+}
 
 
 
