@@ -155,7 +155,7 @@ h1::first-letter { text-transform: capitalize; }
   font-weight: 800;
   text-align: center;
   text-transform: capitalize;
-  transform: translateX(200%);
+  transform: translateX(400%);
   transition: transform 0.4s ease;
 }
 
@@ -173,7 +173,7 @@ h1::first-letter { text-transform: capitalize; }
 
 @keyframes first {
   0% {
-  transform: translatex(200%);
+  transform: translatex(400%);
   }
   100% {
     transform: translateX(0%);
@@ -188,16 +188,16 @@ h1::first-letter { text-transform: capitalize; }
 
 @keyframes second {
   0% {
-  transform: translatex(-200%);
+  transform: translatex(-400%);
   }
   100% {
     transform: translateX(0%);
   }
 }
 
-.box:nth-of-type(even) { transform: translateX(-200%); }
+.box:nth-of-type(even) { transform: translateX(-400%); }
 
-.box .show { transform: translateX(0); }
+.box.show { transform: translateX(0); }
 /*=================================
   main styling ends here
 =================================*/
