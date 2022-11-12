@@ -138,6 +138,8 @@ h1::first-letter { text-transform: capitalize; }
 /*=================================
   main styling starts here
 =================================*/
+.container { overflow: hidden; }
+
 .box-container {
   display: flex;
   align-items: center;
