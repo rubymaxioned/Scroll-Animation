@@ -102,6 +102,12 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
@@ -124,22 +130,32 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+main { background-color: beige; }
+
 .box-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 
 .box { 
-  flex-basis: 20%;
+  min-width: 50%;
+  min-height: 60px;
+  border-radius: 5px;
+  background-color: #50a5eb;
+  color: #ffff;
+  font-weight: 800;
   text-align: center;
-  min-width: 20%;
-  min-height: 40px;
+  text-transform: capitalize;
 }
 
-
+.box-container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -163,9 +179,36 @@ li {
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+.box {
+  min-width: 50%;
+  min-height: 60px
+}
 
+
+}  
+
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+.box {
+  min-width: 30%;
+  min-height: 70px;
+}
+}  
+
+@media only screen and (min-width: 995px) {
+.box {
+  min-width: 25%;
+  min-height: 80px;
+  font-size: 21px;
+}
+} 
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 1024px) {
+.box { min-height:  85px; }
 
 
 }  
