@@ -197,7 +197,7 @@ h1::first-letter { text-transform: capitalize; }
 
 .box:nth-of-type(even) { transform: translateX(-200%); }
 
-.show { transform: translateX(0); }
+.box .show { transform: translateX(0); }
 /*=================================
   main styling ends here
 =================================*/
