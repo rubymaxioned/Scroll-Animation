@@ -117,12 +117,19 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.container { 
+  padding-top: 10px;
+  background-color: beige;
+}
 
+h1 { 
+  padding-bottom: 20px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+}
 
-
-
-
-
+h1::first-letter { text-transform: capitalize; }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -130,8 +137,6 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-main { background-color: beige; }
-
 .box-container {
   display: flex;
   align-items: center;
@@ -208,7 +213,11 @@ main { background-color: beige; }
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 1024px) {
-.box { min-height:  85px; }
+.box { 
+  min-width: 41%;
+  min-height:  150px;
+  font-size: 30px;
+}
 
 
 }  
