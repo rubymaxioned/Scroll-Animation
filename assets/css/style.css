@@ -120,7 +120,7 @@ li {
 .container { 
   padding-top: 10px;
   background-color: beige;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 { 
